@@ -14,7 +14,7 @@ var fetchCmd = &cobra.Command{
 	Short: "Fetch resources from a Firestore instance",
 	Run: func(cmd *cobra.Command, args []string) {
 		ctx := context.Background()
-		client, err := firestore.NewClient(ctx, "product-locator-3fda3")
+		client, err := firestore.NewClient(ctx, "")
 		if err != nil {
 			fmt.Sprintf("unable to initialize Firestore client: %c\n", err)
 		}
